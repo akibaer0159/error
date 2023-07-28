@@ -8,4 +8,26 @@
  동일한 케이스 stackoverflow
  https://stackoverflow.com/questions/75844075/app-not-installed-error-when-trying-to-install-signed-apk-on-android-device
 
- 
+
+ #BottomSheetDialogFragment FullScreen
+
+    override fun onStart() {
+        super.onStart()
+        setupRatio(dialog as BottomSheetDialog)
+    }
+
+    private fun setupRatio(bottomSheetDialog: BottomSheetDialog) {
+        val bottomSheet =
+            bottomSheetDialog.findViewById<View>(com.google.android.material.R.id.design_bottom_sheet) as FrameLayout
+        val behavior: BottomSheetBehavior<*> = BottomSheetBehavior.from(bottomSheet)
+        val layoutParams = bottomSheet.layoutParams
+        layoutParams.height = getWindowHeight()
+        bottomSheet.layoutParams = layoutParams
+        behavior.state = BottomSheetBehavior.STATE_EXPANDED
+    }
+
+    private fun getWindowHeight(): Int {
+        return Resources.getSystem().displayMetrics?.heightPixels ?: 0
+    }
+
+
