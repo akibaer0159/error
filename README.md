@@ -31,3 +31,25 @@
     }
 
 
+#Text color change
+
+
+     Common.setWordColor(
+            channelName,
+            getString(R.string.channel_delete_noti, channelName),
+            "#FFEB6B44"
+        )
+
+      fun setWordColor(colorWord: String, resultText: String, color: String): SpannableStringBuilder {
+      val ssb = SpannableStringBuilder(resultText)
+      val start = resultText.indexOf(colorWord)
+      if (start >= 0) {
+          ssb.setSpan(
+              ForegroundColorSpan(Color.parseColor(color)),
+              start,
+              start + colorWord.length,
+              Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
+          )
+      }
+      return ssb
+    }
