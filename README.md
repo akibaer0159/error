@@ -53,3 +53,7 @@
       }
       return ssb
     }
+
+
+ flutter file download with header 
+ https://github.com/abdallah-odeh/flutter_file_downloader/issues/16
