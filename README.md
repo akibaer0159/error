@@ -57,3 +57,11 @@
 
  flutter file download with header 
  https://github.com/abdallah-odeh/flutter_file_downloader/issues/16
+
+
+
+
+#flutter
+provider -> riverpod 업글, 상태관리 pack, 
+https://engineering.linecorp.com/ko/blog/flutter-architecture-getx-bloc-provider
+https://seosh817.tistory.com/416
