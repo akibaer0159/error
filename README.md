@@ -65,3 +65,11 @@
 provider -> riverpod 업글, 상태관리 pack, 
 https://engineering.linecorp.com/ko/blog/flutter-architecture-getx-bloc-provider
 https://seosh817.tistory.com/416
+
+
+#android 6.0.1 shouldOverrideUrlLoading 못받는 오류
+구버전 OS -> override fun shouldOverrideUrlLoading(view: WebView?, url: String?): Boolean {}
+최신버전 OS -> override fun shouldOverrideUrlLoading(view: WebView?, request: WebResourceRequest?): Boolean {}
+
+
+
