@@ -72,4 +72,14 @@ https://seosh817.tistory.com/416
 최신버전 OS -> override fun shouldOverrideUrlLoading(view: WebView?, request: WebResourceRequest?): Boolean {}
 
 
+#android 14에서 MissingForegroundServiceType Error 발생하는경우
+androidManifast.xml <service>에 android:foregroundServiceType 추가
+https://developer.android.com/about/versions/14/behavior-changes-14?hl=ko#safer-intents
+
+#android 14에서 '이 앱은 Android최신버전과 호환되지 않습니다. 업데이트를확인하거나 개발자에게 문의하세요'
+32bit, 64bit 둘다 지원하는 단말에서 32bit so만 지원하도록 설정하는 경우 발생하는 팝업 둘다 지원하도록 수정 필요
+https://github.com/flutter/flutter/issues/137895
+https://cs.android.com/android/platform/superproject/main/+/main:frameworks/base/services/core/java/com/android/server/wm/AppWarnings.java;l=176?q=DeprecatedAbiDialog
+
+
 
