@@ -82,4 +82,7 @@ https://github.com/flutter/flutter/issues/137895
 https://cs.android.com/android/platform/superproject/main/+/main:frameworks/base/services/core/java/com/android/server/wm/AppWarnings.java;l=176?q=DeprecatedAbiDialog
 
 
+#Bitmap too large to be uploaded into a texture 워닝 발생하는 경우
+drawable 폴더에 이미지를 넣어놓고 설정 시 현재 해상도에 맞는 dip로 변환해서 처리하게됨, 해상도 상관없이 동일한 이미지 사이즈로 사용하고 싶을경우 drawable-nodip에 넣어야함
+
 
