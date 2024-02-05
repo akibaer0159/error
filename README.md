@@ -82,6 +82,15 @@ https://github.com/flutter/flutter/issues/137895
 https://cs.android.com/android/platform/superproject/main/+/main:frameworks/base/services/core/java/com/android/server/wm/AppWarnings.java;l=176?q=DeprecatedAbiDialog
 
 
+
+#splash screen under android 11 인경우 브랜드 아이콘 표시 불가
+꼼수로 background에 아이콘을 설정하고 보여주는 방법이 있다
+https://github.com/apache/cordova-android/issues/1654
+
+
+
+
+
 #Bitmap too large to be uploaded into a texture 워닝 발생하는 경우
 drawable 폴더에 이미지를 넣어놓고 설정 시 현재 해상도에 맞는 dip로 변환해서 처리하게됨, 해상도 상관없이 동일한 이미지 사이즈로 사용하고 싶을경우 drawable-nodip에 넣어야함
 
